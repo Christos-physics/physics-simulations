@@ -1,14 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="el">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physics Simulations</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        
+        /* Τίτλος - Κεντραρισμένος */
+        .header { padding: 20px; font-size: 24px; font-weight: bold; text-align: center; }
+        
+        /* Μαύρη μπάρα μενού - Στοιχισμένη αριστερά */
+        .navbar { background-color: #000; padding: 10px; display: flex; align-items: center; justify-content: flex-start; }
+        .navbar a { color: #fff; padding: 14px 20px; text-decoration: none; display: block; }
+        .navbar a:hover { background-color: #333; }
+
+        /* Dropdown κλάση - Μόνο στο hover, χωρίς βελάκι */
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content {
+            display: none; position: absolute; background-color: #333;
+            min-width: 160px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1; /* Για να φαίνεται πάνω από το περιεχόμενο */
+        }
+        .dropdown-content a { color: white; padding: 12px 16px; text-decoration: none; display: block; }
+        
+        /* Εμφάνιση του περιεχομένου στο hover */
+        .dropdown:hover .dropdown-content { display: block; }
+        
+        /* Αλλαγή χρώματος του κουμπιού στο hover */
+        .dropdown:hover .dropbtn { background-color: #333; }
+    </style>
 </head>
 <body>
-    <h1>Οι Προσομοιώσεις μου</h1>
-    <ul>
-        <li><a href="oscilator.html">Απλή Αρμονική Ταλάντωση</a></li>
-        <li><a href="Krouseis.html">Κρούσεις</a></li>
-        <li><a href="mag_field.html">Μαγνητικό Πεδίο</a></li>
-    </ul>
+
+    <div class="header">Απλή Φυσική</div>
+
+    <div class="navbar">
+        <a href="index.html">Αρχική</a>
+        <a href="#">Τυπολόγιο</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Προσομοιώσεις</a>
+            <div class="dropdown-content">
+                <a href="oscillator.html">Απλή Αρμονική Ταλάντωση</a>
+                <a href="Krouseis.html">Κρούσεις</a>
+                <a href="mag_field.html">Μαγνητικό Πεδίο</a>
+            </div>
+        </div>
+        
+        <a href="#">Έξτρα Υλικό</a>
+    </div>
+
 </body>
 </html>
