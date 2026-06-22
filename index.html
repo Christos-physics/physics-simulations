@@ -3,37 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Physics Simulations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <title>Mikroi Einsteins</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
         
-        /* Τίτλος - Κεντραρισμένος */
-        .header { padding: 20px; font-size: 24px; font-weight: bold; text-align: center; }
+        /* Τίτλος - Fancy και Κεντραρισμένος */
+        .header { 
+            padding: 30px; 
+            font-size: 50px; 
+            font-family: 'Dancing Script', cursive; 
+            color: #d63384; /* Ένα ωραίο ροζ χρώμα */
+            text-align: center; 
+        }
         
-        /* Μαύρη μπάρα μενού - Στοιχισμένη αριστερά */
-        .navbar { background-color: #000; padding: 10px; display: flex; align-items: center; justify-content: flex-start; }
-        .navbar a { color: #fff; padding: 14px 20px; text-decoration: none; display: block; }
-        .navbar a:hover { background-color: #333; }
+        /* Ροζ μπάρα μενού - Στοιχισμένη αριστερά */
+        .navbar { background-color: #ffc0cb; padding: 10px; display: flex; align-items: center; justify-content: flex-start; }
+        .navbar a { color: #555; padding: 14px 20px; text-decoration: none; display: block; font-weight: bold; }
+        .navbar a:hover { background-color: #ff85a2; color: white; }
 
-        /* Dropdown κλάση - Μόνο στο hover, χωρίς βελάκι */
+        /* Dropdown κλάση */
         .dropdown { position: relative; display: inline-block; }
         .dropdown-content {
-            display: none; position: absolute; background-color: #333;
-            min-width: 160px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-            z-index: 1; /* Για να φαίνεται πάνω από το περιεχόμενο */
+            display: none; position: absolute; background-color: #fff;
+            min-width: 180px; box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+            z-index: 1;
         }
-        .dropdown-content a { color: white; padding: 12px 16px; text-decoration: none; display: block; }
+        .dropdown-content a { color: #d63384; padding: 12px 16px; text-decoration: none; display: block; }
+        .dropdown-content a:hover { background-color: #ffe6eb; }
         
-        /* Εμφάνιση του περιεχομένου στο hover */
         .dropdown:hover .dropdown-content { display: block; }
-        
-        /* Αλλαγή χρώματος του κουμπιού στο hover */
-        .dropdown:hover .dropbtn { background-color: #333; }
     </style>
 </head>
 <body>
 
-    <div class="header">Απλή Φυσική</div>
+    <div class="header">Mikroi Einsteins</div>
 
     <div class="navbar">
         <a href="index.html">Αρχική</a>
